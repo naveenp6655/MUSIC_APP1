@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'screens/splash/splash_screen.dart';
+
+import 'navigation/main_navigation.dart';
 
 void main() {
-  runApp(const MusicApp());
+  runApp(const MyApp());
 }
 
-class MusicApp extends StatelessWidget {
-  const MusicApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Music App',
-      home: const SplashScreen(),
+      home: MainNavigation(),
     );
   }
 }
