@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'navigation/main_navigation.dart';
+import 'screens/splash/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MainNavigation(),
+      home: SplashScreen(),
     );
   }
 }
+
